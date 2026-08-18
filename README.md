@@ -49,7 +49,7 @@ the Streamlit app for scoring.
 
 ## c. GitHub Repository Link
 
-`<PASTE YOUR GITHUB REPO URL HERE AFTER YOU PUSH>`
+`https://github.com/2025ac05870/2025ac05870_ML_assignment_2`
 
 ## d. Models Used
 
@@ -77,43 +77,6 @@ All 5 models were trained on identical preprocessed data
 | Random Forest (Ensemble) | **Best overall** on every metric except recall vs. Naive Bayes/Decision Tree. Averaging many trees reduces variance and handles the mixed numeric/categorical feature set and class imbalance far better than any single model. |
 | **Overall Winner** | **Random Forest (Ensemble)** — highest Accuracy, AUC, F1, and MCC, making it the most reliable model for this imbalanced purchasing-intention dataset. |
 
-## Repository Structure
-
-```
-project-folder/
-│-- app.py                  # Streamlit app
-│-- train.py                # Trains all 5 models, saves pipelines + metrics
-│-- requirements.txt
-│-- README.md
-│-- test_data.csv           # Held-out test split (upload this in the app)
-│-- online_shoppers_intention.csv   # Full raw dataset (for reference)
-│-- model/
-│   │-- logistic_regression.pkl
-│   │-- decision_tree.pkl
-│   │-- knn.pkl
-│   │-- naive_bayes.pkl
-│   │-- random_forest_ensemble.pkl
-│   │-- metrics_comparison.csv
-│   └-- schema.json
-```
-
-## Streamlit App Features
-
-- 📁 CSV upload (upload `test_data.csv`)
-- ⚙️ Model selection dropdown (choose among the 5 trained models)
-- 📈 Live evaluation metrics (Accuracy, AUC, Precision, Recall, F1, MCC)
-- 🔢 Confusion matrix + classification report
-- 📊 Pre-computed comparison table across all models
-- ⬇️ Download predictions as CSV
-
-## How to Run Locally
-
-```bash
-pip install -r requirements.txt
-python train.py          # retrains models (optional — .pkl files already included)
-streamlit run app.py
-```
-
 ## Live App
 
-`<PASTE YOUR STREAMLIT COMMUNITY CLOUD LINK HERE>`
+`https://2025ac05870mlassignment2-n3635gp7pte5gbxrgaeepn.streamlit.app/`
